@@ -5,6 +5,12 @@ A project documentation is provided in the repository.
 
 ### eye_blink_detect.py is the main file.
 
+### Clone or download this repository
+
+```sh
+git clone https://github.com/SaquibAnwar/cursor-control.git
+```
+
 ## Install dependencies
 ### 1. opencv    
 '''sh
