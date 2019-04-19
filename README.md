@@ -13,27 +13,27 @@ git clone https://github.com/SaquibAnwar/cursor-control.git
 
 ## Install dependencies
 ### 1. opencv    
-'''sh
+```sh
 pip install openCV-python
-'''
+```
 ### 2. numpy      
-'''sh
+```sh
 pip install numpy
-'''
+```
 ### 3. matplotlib 
-'''sh
+```sh
 pip install matplotlib
-'''
+```
 ### 4. pyautogui 
-'''sh
+```sh
 pip install pyautogui
-'''
+```
 ### 5. imutils    
 ```sh
 pip install imutils
 ````
 ### 6. scipy      
-'''sh
+```sh
 pip install scipy
-'''
+```
 
