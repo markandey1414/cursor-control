@@ -95,15 +95,15 @@ while True:
 
         xv, yv = nose[0]
 
-        xw = np.int(xv)
-        yw = np.int(yv)
+        xw = int(xv)
+        yw = int(yv)
         print(type(xv))
         xv,yv = calculateView(xw,yw)
 
         # for mouse control
         mouseLoc = mLocOld + ((xv,yv)-mLocOld)//DampingFactor
         print('nx = {} and ny = {}'.format(mouseLoc[0], mouseLoc[1]))
-        m.moveTo(mouseLoc[0],mouseLoc[1],pause = 0,tween =  m.linear(.5))
+        m.moveTo(mouseLoc[0],mouseLoc[1],duration = 0,tween =  m.linear(0.5))
 
         # calculate the eye-aspect-ratio(EAR) for both eyes
         leftEAR = eye_aspect_ratio(leftEye)
@@ -118,10 +118,10 @@ while True:
         #cv2.drawContours(frame, [noseHull], -1, (0, 255, 0), 1)
 
         if rightEAR < .15:
-            m.click(mouseLoc[0],mouseLoc[1],clicks = 1, button = 'left', pause = 0  )
+            m.click(mouseLoc[0],mouseLoc[1],clicks = 1, button = 'left', duration = 0  )
 
         if leftEAR < .15:
-            m.click(mouseLoc[0],mouseLoc[1],clicks = 1, button = 'right', pause = 0)
+            m.click(mouseLoc[0],mouseLoc[1],clicks = 1, button = 'right', duration = 0)
 
         mLocOld = mouseLoc
 
